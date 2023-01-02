@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import Image from 'next/image';
+import Image from 'next/image'
+import Robot from '../../../public/robot.png';
 import styles from '../../../styles/Header.module.css';
 
 const Header = () => {
@@ -23,7 +24,7 @@ const Header = () => {
           </div> 
         </div>
         <div className={styles.site__header_image}>
-          <img src='robot.png' alt='Futuristic Robot'/>
+          <Image src={Robot} alt='Futuristic Robot'/>
         </div>
       </div>
     )

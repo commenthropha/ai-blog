@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className = {styles.site__navbar}>
       <div className= {styles.site__navbar_links}>
         <div className= {styles.site__navbar_links_logo}>
-          <img src = 'next.svg' alt = "logo" />
+          <img src = 'next.png' alt = "logo" />
         </div>
         <div className = {styles.site__navbar_links_container}>
           <Menu />

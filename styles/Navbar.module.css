@@ -1,0 +1,141 @@
+.site__navbar{
+    display: flex;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#blog_link{
+    color: #f49867;
+}
+
+.site__navbar_links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.site__navbar_links_container{
+    display: flex;
+}
+
+.site__navbar_links_logo{
+    margin-right: 2rem;
+}
+
+.site__navbar_links_logo img{
+    width: 62px;
+    height: 16px;
+}
+
+.site__navbar_menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.site__navbar_menu svg {
+    cursor: pointer;
+}
+
+
+.site__navbar_menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1.5rem;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,1)
+}
+
+.site__navbar_menu_container p {
+    margin: 1rem 0;
+}
+
+.site__navbar_links_container p,
+.site__navbar_sign p,
+.site__navbar_menu_container p {
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.scale-up-tr {
+	-webkit-animation: scale-up-tr 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-tr 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/*
+ * Media Queries
+ */
+
+ @media screen and (max-width: 550px) {
+    .site__navbar {
+        padding: 2rem;
+    }
+
+    .site__navbar_menu_container {
+        top: 20px;
+    }
+ }
+
+ @media screen and (max-width: 800px) {
+    .site__navbar {
+        padding: 2rem 2rem;
+    }
+
+    .site__navbar_links_container {
+        display: none;
+    }
+
+    .site__navbar_menu {
+        display: flex;
+    }
+ }
+
+ /* 
+ * Animations
+ */
+
+ @-webkit-keyframes scale-up-tr {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+  @keyframes scale-up-tr {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }

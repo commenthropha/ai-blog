@@ -1,12 +1,13 @@
 import Head from 'next/head'
-import {Inter} from '@next/font/google'
-import {Navbar} from '../components';
-import {Header, WhatAI, Blog} from '../sections/landing';
+import { Inter } from '@next/font/google'
+import { Navbar } from '../components';
+import { Header, WhatAI, Blog } from './landing';
+import { getRecentPosts } from '../services';
 import styles from '../styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({posts}) {
   return (
     <>
       <Head>
@@ -15,14 +16,22 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div id = 'root'>
-        <div class = {styles.gradient__bg}>
-          <Navbar />
+      <div id='root'>
+        <div class={styles.gradient__bg}>
+          <Navbar/>
           <Header />
         </div>
         <WhatAI />
-        <Blog />
+        <Blog posts={posts} />
       </div>
     </>
   )
+}
+
+// Fetch data at build time
+export async function getStaticProps() {
+  const posts = (await getRecentPosts()) || [];
+  return {
+    props: { posts },
+  };
 }

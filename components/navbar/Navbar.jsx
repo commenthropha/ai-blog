@@ -1,13 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import Hamburger from 'hamburger-react';
 import Image from 'next/image';
 import styles from '../../styles/Navbar.module.css'
 
 const Menu = () => (
   <>
-  <p><a href ='#home'>Home</a></p>
-  <p><a href ='#about'>What is AI?</a></p>
-  <p><a href ='#recent'>Recent</a></p>
+  <p><a href ='#whatai'>What is AI?</a></p>
+  <p><a href ='#recent'>Recent Posts</a></p>
   <p id = {styles.blog_link}><a href ='#blog'>Blog</a></p>
   </>
 )
@@ -15,7 +14,6 @@ const Menu = () => (
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-
   return (
     <div className = {styles.site__navbar}>
       <div className= {styles.site__navbar_links}>

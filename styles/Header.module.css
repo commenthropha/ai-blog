@@ -1,6 +1,7 @@
 .site__header {
     display: flex;
     justify-content: space-between;
+    padding: 4rem 6rem;
 }
 
 .site__header_content {
@@ -15,9 +16,9 @@
 .site__header_content h1 {
     font-family: var(--font-family);
     font-weight: 800;
-    font-size: 55px;
-    line-height: 75px;
-    letter-spacing: -0.04em;
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: -0.02em;
 }
 
 .site__header_content p {
@@ -88,14 +89,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-.section__margin {
-    margin: 4rem 6rem;
-}
-
-.section__padding {
-    padding: 4rem 6rem;
-}
-
 
 @media screen and (max-width: 1144px) {
     .site__header_image {
@@ -136,12 +129,8 @@
 }
 
 @media screen and (max-width: 700px) {
-    .section__padding {
+    .site__header {
         padding: 4rem 2rem;
-    }
-
-    .section__margin {
-        margin: 4rem 2rem;
     }
 }
 

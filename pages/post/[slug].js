@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import moment from 'moment';
-import Head from 'next/head'
+import Head from 'next/head';
 import { getPostDetails, getPosts } from '../../services';
 import { useRouter } from 'next/router';
+import {Navbar} from '../../components';
 import { Content } from '.';
 import styles from '../../styles/PostDetails.module.css';
-
-import Image from 'next/image'
+import Image from 'next/image';
 import { graphCMSImageLoader } from '../../util';
 
 const PostDetails = ({ post }) => {
@@ -21,6 +21,7 @@ const PostDetails = ({ post }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar/>
       <div class= {styles.post}>
         <div class = {styles.post_heading}>
           <h1>{post.title}</h1>

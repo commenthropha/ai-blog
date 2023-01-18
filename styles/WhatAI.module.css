@@ -22,7 +22,7 @@
     font-family: var(--font-family);
     font-weight: 800;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
     letter-spacing: -0.04em;
     color: #fff;
 }
@@ -32,7 +32,7 @@
     font-weight: 800;
     font-size: 33px;
     margin: 10px 1px;
-    line-height: 24px;
+    line-height: 35px;
     letter-spacing: -0.04em;
     color: #fff;
 }
@@ -206,9 +206,7 @@
     .section__margin {
         margin: 4rem 2rem;
     }
-}
 
-@media screen and (max-width: 650px) {
     /* Customizing feature component as per needs */
     .whatai_feature .ai__features_container__feature {
         flex-direction: column;
@@ -224,6 +222,7 @@
         line-height: 40px;
     }
 }
+
 
 @media screen and (max-width: 350px) {
     /* Customizing feature component as per needs */

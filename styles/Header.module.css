@@ -110,7 +110,12 @@
     }
 }
 
-@media screen and (max-width: 650px) {
+
+@media screen and (max-width: 700px) {
+    .site__header {
+        padding: 4rem 2rem;
+    }
+
     .site__header_content h1 {
         font-size: 48px;
         line-height: 60px;
@@ -125,12 +130,6 @@
     .site__header_content__input button {
         font-size: 16px;
         line-height: 24px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .site__header {
-        padding: 4rem 2rem;
     }
 }
 

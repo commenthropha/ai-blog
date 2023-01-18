@@ -27,7 +27,7 @@ const FeaturePostCard = ({post}) => {
         <h2>{post.subheading}</h2>
       </div>
       <div>
-          <p>Read Full Article</p>
+          <p>Written by {post.author}</p>
       </div>
     </div>
   </div>

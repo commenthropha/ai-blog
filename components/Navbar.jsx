@@ -9,7 +9,6 @@ import next from 'next';
 const Menu = () => (
   <>
   <Link href = '/'><p>Home</p></Link>
-  <p>About Us</p>
   <Link href = '/blog/blog'><p id = {styles.blog_link}>Blog</p></Link>
   </>
 )
